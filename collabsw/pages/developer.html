@@ -1,0 +1,20 @@
+<div class='container'>
+    <div class="jumbotron">
+        <a href='mailto:{{author.email}}?subject={{title}} - contact'><img src='{{author.image}}' alt='{{author.name}}' style="width:48px;height:48px;"></a></img>
+        <h2><a href='mailto:{{author.email}}?subject={{title}} - contact'>{{author.name}}</a></h2>
+        <p>
+            <ul>
+                <li ng-repeat='social in author.social'>
+                    <a href='{{social[1]}}' target='{{social[0]}}'>{{social[0]}}</a>
+                </li>
+            </ul>
+        </p>
+        <h4>Colaboradores</h4><p>
+            <ul>
+                <li ng-repeat='collab in author.collab'>
+                    {{collab}}
+                </li>
+            </ul>
+        </p>
+    </div>
+</div>

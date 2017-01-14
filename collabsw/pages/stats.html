@@ -1,0 +1,17 @@
+<div class='container' ng-init='icon="glyphicon-time";'>
+    <div class='form-group'>
+        <label for='name'>Descrição:</label>
+        <select class='form-control' class='selectpicker' ng-model='selected'  ng-mouseup='start();'>
+            <option ng-repeat='event in events | orderBy: date' 
+                value='{ "id":{{event.id}}, "status":"{{event.status}}" }'>
+                {{event.date}} - {{event.name}}
+            </option>
+        </select>
+    </div>
+    <div class='form-group' style='display: {{show}};'>
+        <div google-chart chart="table"></div>
+        <div google-chart chart="linechart"></div>
+        <div google-chart chart='barchart'></div>
+        <div google-chart chart="timeline"></div>
+    </div>
+</div>

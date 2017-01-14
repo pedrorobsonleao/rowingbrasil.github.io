@@ -1,0 +1,15 @@
+<div class='container' ng-init='distance=0; itens=0;' ng-controller='event.ctrl' >
+    <div class="form-group">
+      <label for="name">Descrição:</label>
+      <input type="text" class="form-control" id="name" ng-model='name'     value={{name}}  pattern='^([:0-9A-Za-z ]+)' title='Informe o nome da prova' />
+    
+      <label for="distance">Distancia:</label>
+      <input type="number" class="form-control" id="distance"  ng-model='distance' value={{distance}} min=0 step=250 title='Informe a distancia' />
+  
+      <label for="itens">Participantes:</label>
+      <input type="number" class="form-control" id="itens" ng-model='itens'    value={{itens}}    min=0 title='Informe o numero de participantes' />
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-primary btn-block glyphicon glyphicon-send"  ng-click="addItem()"></button>
+    </div>
+</div>

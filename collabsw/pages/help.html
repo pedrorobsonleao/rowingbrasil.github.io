@@ -1,0 +1,178 @@
+
+<style  type="text/css" media="print">
+    @media print {
+        .page-break {
+            display: block;
+            page-break-after: always;
+        }
+        .rodape {
+            background-color: #cecece;
+            text-align: center;
+            font-size: 8pt;
+            font-family: Verdana;
+            font-weight: bold;
+            width: 100%;
+            color: black;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            display: table;
+        }
+        .pageFooter {
+            display: table-footer-group;
+        }
+        .pageFooter:after {
+            counter-increment: page;
+            content: counter(page);
+        }
+    }
+</style>
+<div class='jumbotron'>
+    <h1>HELP - {{title}}</h1>
+</div>
+<div class='container'>
+        <ul class='page-break'>
+            <li><a href='#/help/#{{title}}'>{{title}}</a></li>
+            <li><a href='#/help/#main'>main</a></li>
+            <li><a href='#/help/#event'>event</a></li>
+            <li><a href='#/help/#start'>start</a></li>
+            <li><a href='#/help/#lap'>lap</a></li>
+            <li><a href='#/help/#stats'>stats</a></li>
+            <li><a href='#/help/#about'>about</a></li>
+            <ul>
+                <li><a href='#/help/#version'>version</a></li>
+                <li><a href='#/help/#help'>help</a></li>
+                <li><a href='#/help/#developer'>developer</a></li>
+            </ul>
+            <li><a href='#/help/#next'>pr&oacute;xima vers&atilde;o</a></li>
+        </ul>
+    
+        <div class='page-header'><h2><a id='{{title}}'>{{title}}</a></h2></div>
+        <p>
+            Consiste de uma solu&ccedil;&atilde;o colaborativa para a coleta de tempo com demostrativos gr&aacute;ficos de resultados online utilizando dispositivos mobile para a devida capitura manual em seus devidos pontos de checagem, <b>LAPS</b>.
+            <br>Utilizando a barra de menus &eacute; poss&iacute;vel evetuar o cadastro de provas bem como as devidas tomadas de tempo e acesso estatistico.
+             <img class='img-responsive' src='images/collab-stopwatch.png' alt='{{title}}'> 
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='main'>main</a></h2></div>
+        <p>
+            Nesta tela temos acessso a uma listas de provas dispon&iacute;veis com suas devidas informa&ccedil;&otilde;es se ja foram ou n&atilde;o realizadas.</p>
+            <img class='img-responsive' src='images/main.png' alt='main'> 
+         </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='event'>event</a></h2></div>
+        <p>
+            Nesta tela &eacute; realizado o cadastro de um determinado evento ou prova atrav&eacute;s  de um formul&aacute;rio.
+            <img class='img-responsive' src='images/event.png' alt='event'>
+            Um exemplo de uso pode ser visto na imagem abaixo:
+            <img class='img-responsive' src='images/event-1.png' alt='event'>
+            Ap&oacute;s o salvamento do evento a tela ser&aacute; limpa.
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='start'>start</a></h2></div>
+        <p>
+            Nesta tela existe apenas um box onde apenas um unico evento pode ser selecionado.
+            <img class='img-responsive' src='images/start.png' alt='start'>
+            Somente provas ainda n&atilde;o iniciadas aparecem nesta tela.
+            <img class='img-responsive' src='images/start-1.png' alt='start'>
+            Ap&oacute;s a devida sele&ccedil;&aacute;o do evento deve-se ent&atilde;o se clicar no bot&aacute;o para que a prova seja iniciada.
+            <br><b>ATEN&Ccedil;&Atilde;O</b> para garantir a sincroniza&ccedil;&atilde;o do hor&aacute;rio &eacute; recomentado que a horas dos equipamentos envolvidos na capta&ccedil;&atilde;o te tempo esteja com seus hor&atilde;rios sincronizados com a operadora e/ou rel&oacute;gio atomico.
+            <img class='img-responsive' src='images/start-2.png' alt='start'>
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='lap'>lap</a></h2></div>
+        <p>
+            Nesta tela encontra-se o formul&atilde;rio para a coleta de pontos de checagem, <b>LAPS</b>.
+            <img class='img-responsive' src='images/lap.png' alt='lap'>
+            Assim como maioria das telas a tela LAP possui um campo de sele&ccedil;&atilde;o onde as provas inciadas v&atilde;o aparecer.
+            <br>Uma prova deve ser seleionada e a posi&ccedil;&atilde;o de tomada dever ser preenchida.
+            <img class='img-responsive' src='images/lap-1.png' alt='lap'>
+            Logo que uma prova &eacute; selecionada na tela ir&atilde;o aparecer bot&otilde;es para tomada de cada um dos participantes.
+            <br>Conforme imagem acima.
+            <br><br>A coleta e feita de forma manual, tocando em no bot&atilde;o que representa cada um dos participantes.
+            <br>Ao final da coleta de todos os participantes, deve-se clicar ent&atilde;o no bot&atilde;o de <b>ENVIO</b>.
+            <br>Est&atilde; et&atilde;pa deve se repetir em cada um dos pontos de checagem at&etilde; ao ponto final de checagem na linha de chegada.
+            <img class='img-responsive page-header' src='images/lap-2.png' alt='lap'>
+            <img class='img-responsive page-header' src='images/lap-3.png' alt='lap'>
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='stats'>stats</a></h2></div>
+        <p>
+            A tela de estatiscas &eacute; tambem possui um campo onde qualquer prova, realizada ou em andamento pode ser selecionda.
+            <img class='img-responsive' src='images/stats.png' alt='stats'>
+            Caso a prova esteja em andamento a tela ficara realizando refresh &aacute; cada 5s para que os gr&aacute;ficos sejam atualizados online.
+            <img class='img-responsive' src='images/stats-1.png' alt='stats'>
+            Conforme o andamento da prova os gr&aacute;ficos são atualizados conforme imagens a baixo com o devido andamento e coleta em cadas um dos pontos.
+            <img class='img-responsive page-header' src='images/stats-2.png' alt='stats'>
+            <img class='img-responsive page-header' src='images/stats-3.png' alt='stats'>
+            <img class='img-responsive page-header' src='images/stats-4.png' alt='stats'>
+            A tela apresenta os seguintes gr&aacute;ficos:
+            <ul>
+                <li>grid</li>
+                <p>
+                    Um demostrativo de tempo devidamente coletado em cada ponto de coleta e checagem.
+                    <br> Apreseta também o tempo total coletado e um flag indicando se o participante concluiu ou n&atlde;o a prova.
+                </p>
+                <li>line</li>
+                <p>
+                    Um gr&aacute;fico de linha comparando a distancia de cada um dos devidos participantes em cada um dos pontos de coleta e checagem.
+                </p>
+                <li>bar</li>
+                <p>
+                    Uma outra vis&atilde;o comparando a distancia de cada um dos devidos particioanetes em cada um dos pontos de coleta e checagem.
+                </p>
+                <li>timeline</li>
+                <p>
+                    Mostra  o tempo total decorrido de cada um dos devidos participantes.
+                    <br>O menor tempo ganha.
+                </p>
+            </ul>
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='about'>about</a></h2></div>
+        <div class='page-header'><h3><a id='version'>version</a></h3></div>
+        <p>
+            Mostra a vers&atilde;o atual do programa.
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h3><a id='help'>help</a></h3></div>
+        <p>
+            Da acesso a este documento.
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h3><a id='developer'>developer</a></h3></div>
+        <p>
+            Informa&ccedil;&atilde;o sobre os desenvolvedores e colaboradores.
+        </p>
+        <a class='page-break' href='#/help'>indice</a>
+        
+        <div class='page-header'><h2><a id='next'>pr&oacute;xima vers&atilde;o</a></h2></div>
+        <p><ul>
+            <li>autentica&ccedil;&atilde;o para a realiza&ccedil;&atilde; de checagem e coleta.</li>
+            <li>melhoria no controle de erros de acesso aos servi&ccedil;os.</li>
+            <li>revis&aacute;o de interface e documenta&ccedil;&atilde;o.</li>
+        </ul></p>
+        <a class='page-break' href='#/help'>indice</a>
+    </div>
+</div>
+<div class='rodape'>
+    <table width='100%'>
+        <tr><th colspan='3'></th></tr>
+        <tr><th><img src='images/stopwatch-128.png' alt='{{title}}' width='24' height='24' /></th>
+            <th align='center'>{{title}}</th>
+            <td>
+                <div class='pageFooter'>
+                    {{date}} - Page
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
